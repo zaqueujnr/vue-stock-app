@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* tipography */
+h1 {
+  @apply text-base font-bold leading-tight;
+}
+h2 {
+  @apply text-sm font-bold leading-tight;
+}
+/* p {
+  @apply
+}
+span {
+  @apply
+} */
+
+/* side bar */
+.side-bar {
+  @apply bg-amber-800 fixed top-0 left-0 h-screen p-4 text-white transition-all duration-300 ease-in-out;
+}
+.side-bar a {
+  @apply flex gap-2.5;
+}
+.side-bar ul {
+  @apply flex flex-col space-y-4;
+}
+
+/* app */
+.wrapper {
+  @apply transition-all duration-300 flex justify-center w-full box-border max-h-screen overflow-hidden;
+}
+.app {
+  @apply max-w-[1280px] w-full mx-4 pb-0 p-1.5 flex flex-col font-normal box-border max-h-screen overflow-y-auto gap-3;
+}
+
+/* input ui */
+input {
+  @apply w-full px-4 py-2 border border-gray-200 rounded-md placeholder:text-gray-500 placeholder:italic focus:outline-none focus:ring-2 focus:ring-amber-500;
+}
+.input-search-component {
+  @apply relative flex-1;
+}
+.input-search-component input {
+  @apply pl-10 ;
+}
+.icon-input {
+  @apply w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-500;
+}
+.icon-sidebar {
+  @apply w-7 h-7;
+}
+
+/* table ui */
+th {
+  @apply text-justify p-2 text-sm;
+}
+td {
+  @apply p-2 text-sm;
+}
+
+/* pagination ui */
+.pagination-component {
+  @apply flex justify-end items-center p-3 gap-3;
+}
+
+/* button ui */
+button {
+  @apply rounded disabled:opacity-50;
+}
+.btn-sm {
+  @apply text-sm px-3 py-1.5;
+}
+.btn-md {
+  @apply text-base px-4 py-2;
+}
+.btn-lg {
+  @apply text-lg px-5 py-3;
+}
+.btn-primary {
+  @apply bg-blue-900 text-white hover:bg-blue-700;
+}
+.btn-secondary {
+  @apply bg-white text-blue-600 border border-blue-600 hover:bg-blue-50;
+}
+
+/* colors theme */
+@theme {
+  --color-mint: blue;
+}

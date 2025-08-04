@@ -1,0 +1,35 @@
+{
+  "name": "vue-app-stock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaqueujnr/vue-stock-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/zaqueujnr/vue-stock-app/issues"
+  },
+  "homepage": "https://github.com/zaqueujnr/vue-stock-app#readme",
+  "dependencies": {
+    "@heroicons/vue": "^2.2.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "axios": "^1.10.0",
+    "tailwindcss": "^4.1.11",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
+  }
+}
